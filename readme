@@ -1,0 +1,233 @@
+Developer Handoff — Project Instructions
+🔹 Overview
+
+This project includes reference code files and design inspirations.
+👉 Important: The code in the files is NOT final. It is only for AI-feeding / structure reference. The final implementation must match the design layouts shown in the Figma/UI images, with improved UI where needed.
+
+Your job is to:
+
+Follow the exact layout as shown in the design.
+
+Improve the visual quality (subtle UI, cleaner spacing, better typography).
+
+Do not add or change functionality beyond what is listed.
+
+Build a super user-friendly experience focusing on clarity and simplicity.
+
+🔹 Key Rules
+1. Layout must remain the same
+
+Do not change structure or placements from the provided design.
+
+Only improve visually (spacing, typography, consistency, hierarchy).
+
+Navigation layout seen in reference code may be different — follow the design, not the code.
+
+2. Code in the file is NOT final
+
+Treat it as resource code only.
+
+Refactor and rebuild UI for better readability and usability.
+
+Ensure all screens follow consistent:
+
+Viewport sizing
+
+Typography
+
+Padding & margins
+
+Component spacing
+
+Color usage
+
+Icons
+
+3. Keep UI minimal, clean, subtle
+
+Apple-style soft shadowing
+
+Thin outline icons
+
+Balanced spacing
+
+Uniform corner radii
+
+Soft color palette as per design
+
+Don’t overload screens with elements
+
+🔹 Core Feature: Multi-Step User Form
+
+Create a super-friendly, guided, spoon-feeding flow for user onboarding.
+It should collect the following information:
+
+Basic Details
+
+Full Name
+
+Phone Number
+
+Email
+
+Date of Birth
+
+Height
+
+Weight
+
+Medical Questions (Yes/No + Optional detail field)
+
+Do you have Diabetes? (Type 1 / Type 2)
+
+High Blood Pressure?
+
+Cholesterol issues?
+
+Any surgeries?
+
+For women:
+
+PCOD/PCOS?
+
+Any gynecological surgery?
+
+Joint or bone-related injuries?
+
+Any chronic diseases?
+
+Any other medical conditions?
+
+UX Requirements
+
+Each question should be simple, one-by-one or grouped cleanly.
+
+Use:
+
+Toggle switches
+
+Radio buttons
+
+Simple inputs
+
+Optional textarea if they choose "Yes"
+
+Provide progress indication (ex: Step 1/5)
+
+🔹 Output After Form Completion
+
+After the user fills the form:
+
+1. Personalized Workout Plan
+
+Tailored to medical restrictions
+
+Organized by:
+
+Beginner / intermediate
+
+Weekly schedule
+
+Rest days
+
+Simple, accurate, safe exercises
+
+Clear formatting
+
+2. Personalized Meal Plan
+
+Based on:
+
+Weight goals
+
+Health issues (BP, diabetes, PCOS, etc.)
+
+Veg / non-veg preference
+
+Clean card layout
+
+Easy-to-read meals (Breakfast / Lunch / Dinner / Snacks)
+
+UI Requirements for Plans
+
+Use clear section cards
+
+Soft shadows
+
+Suitable spacing
+
+Simple icons
+
+Easy to scan and understand
+
+🔹 Page Instructions
+
+Every page in the project:
+
+Follow the inspiration design
+
+The page templates included in the project folder are only structure references.
+
+The final UI must:
+
+Match the design’s layout
+
+Improve visually
+
+Stay minimal and modern
+
+Accessibility
+
+Large touch targets
+
+Legible font sizes
+
+Clear contrast
+
+Smooth navigation
+
+🔹 Navigation Instructions
+
+Since code navigation and design navigation differ:
+
+IGNORE navigation behavior found in the code
+
+FOLLOW navigation placement shown in the design
+
+Use:
+
+Smooth transitions
+
+Clear highlighted states
+
+Consistent icons and spacing
+
+🔹 Developer Notes
+
+The design is the source of truth.
+
+Code is not final and must be restructured.
+
+UI must be:
+
+Simple
+
+Clean
+
+Functional
+
+Visually refined
+
+Avoid unnecessary animations or complicated interactions.
+
+✔ Final Goal
+
+Deliver a beautiful, clean, user-friendly app that:
+
+Follows the design layout exactly
+
+Provides accurate exercise & meal suggestions
+
+Makes onboarding simple and smooth
+
+Has consistent UI across all pages
