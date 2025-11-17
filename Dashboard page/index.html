@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FitTrack Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#16A34A", // Green for primary actions/highlights
+            "background-light": "#FFFFFF", // White for light mode
+            "background-dark": "#121212", // Very dark gray for dark mode
+            "card-light": "#F9FAFB", // Off-white for cards in light mode
+            "card-dark": "#1F2937", // Dark gray for cards in dark mode
+            "text-primary-light": "#111827", // Almost black for text in light mode
+            "text-primary-dark": "#F9FAFB", // Off-white for text in dark mode
+            "text-secondary-light": "#6B7280", // Medium gray for secondary text in light mode
+            "text-secondary-dark": "#9CA3AF", // Lighter gray for secondary text in dark mode
+            "border-light": "#E5E7EB", // Light gray for borders
+            "border-dark": "#374151", // Darker gray for borders
+          },
+          fontFamily: {
+            display: ["Poppins", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "1rem", // 16px
+            "lg": "1rem", // Ensure lg is also 16px
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+    body {
+      min-height: max(884px, 100dvh);
+      font-feature-settings: 'tnum' on, 'lnum' on;}
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-primary-light dark:text-text-primary-dark">
+<div class="max-w-md mx-auto flex flex-col min-h-screen">
+<main class="flex-grow p-5 pb-6">
+<div class="flex flex-col space-y-6">
+<header class="flex justify-between items-center">
+<h1 class="text-3xl font-bold">FitTrack</h1>
+<button class="w-11 h-11 flex items-center justify-center border border-border-light dark:border-border-dark rounded-full text-text-secondary-light dark:text-text-secondary-dark">
+<span class="material-symbols-outlined !text-2xl">person</span>
+</button>
+</header>
+<section>
+<h2 class="text-4xl font-bold tracking-tight">Hey Yash!</h2>
+<p class="mt-1 text-base text-text-secondary-light dark:text-text-secondary-dark">You're 10% stronger than last month!</p>
+</section>
+<section class="grid grid-cols-3 gap-4">
+<div class="bg-card-light dark:bg-card-dark rounded-lg p-4 text-center flex flex-col items-center justify-center aspect-square space-y-1">
+<span class="material-symbols-outlined text-3xl text-text-secondary-light dark:text-text-secondary-dark">fitness_center</span>
+<p class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark">22/30</p>
+<p class="text-xs text-text-secondary-light dark:text-text-secondary-dark leading-tight">Workouts</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-lg p-4 text-center flex flex-col items-center justify-center aspect-square space-y-1">
+<span class="material-symbols-outlined text-3xl text-text-secondary-light dark:text-text-secondary-dark">restaurant</span>
+<p class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark">85%</p>
+<p class="text-xs text-text-secondary-light dark:text-text-secondary-dark leading-tight">Meals</p>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-lg p-4 text-center flex flex-col items-center justify-center aspect-square space-y-1">
+<span class="material-symbols-outlined text-3xl text-text-secondary-light dark:text-text-secondary-dark">dark_mode</span>
+<p class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark">7.2<span class="text-base font-medium">hrs</span></p>
+<p class="text-xs text-text-secondary-light dark:text-text-secondary-dark leading-tight">Avg. Sleep</p>
+</div>
+</section>
+<section>
+<h3 class="text-lg font-semibold">30-Day Consistency</h3>
+<div class="mt-4 flex items-end justify-between h-24">
+<div class="w-3 rounded-full bg-card-light dark:bg-card-dark" style="height: 60%;"></div>
+<div class="w-3 rounded-full bg-card-light dark:bg-card-dark" style="height: 45%;"></div>
+<div class="w-3 rounded-full bg-text-primary-light dark:bg-text-primary-dark" style="height: 30%;"></div>
+<div class="w-3 rounded-full bg-card-light dark:bg-card-dark" style="height: 65%;"></div>
+<div class="w-3 rounded-full bg-text-primary-light dark:bg-text-primary-dark" style="height: 80%;"></div>
+<div class="w-3 rounded-full bg-text-primary-light dark:bg-text-primary-dark" style="height: 70%;"></div>
+<div class="w-3 rounded-full bg-card-light dark:bg-card-dark" style="height: 40%;"></div>
+<div class="w-3 rounded-full bg-text-primary-light dark:bg-text-primary-dark" style="height: 100%;"></div>
+<div class="w-3 rounded-full bg-card-light dark:bg-card-dark" style="height: 60%;"></div>
+<div class="w-3 rounded-full bg-text-primary-light dark:bg-text-primary-dark" style="height: 85%;"></div>
+<div class="w-3 rounded-full bg-text-primary-light dark:bg-text-primary-dark" style="height: 75%;"></div>
+<div class="w-3 rounded-full bg-card-light dark:bg-card-dark" style="height: 50%;"></div>
+<div class="w-3 rounded-full bg-text-primary-light dark:bg-text-primary-dark" style="height: 80%;"></div>
+</div>
+<div class="mt-3 flex items-center space-x-2 text-sm text-text-secondary-light dark:text-text-secondary-dark">
+<span class="material-symbols-outlined text-orange-500 text-base" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span><span class="font-semibold text-text-primary-light dark:text-text-primary-dark">28/30</span> active days</span>
+</div>
+</section>
+<section>
+<h3 class="text-lg font-semibold">Leaderboard</h3>
+<div class="mt-3 flex items-center space-x-4 bg-card-light dark:bg-card-dark p-4 rounded-lg">
+<img alt="User profile avatar" class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXDtpDrDlQqYu_isCSd3UYD4vXzlkOjX0zXNzjzT09ViTpzBKq__4Z8N05SIh_ZIPYbhY0n9NQvT4_PIsb5twIRflP27eTCA3534UQNpz8_AO--pZR0uqToJMrb1jgTNMg5hQWozmBtVGOvW1Qo_FIObKFABesnZ8Ap0sJrADRTEOv9EwJY5uDSbxsI2UO--lgzHSvDXeBTRIYe9CLQedkHDyRYihNXdwP-RdXM3LyYLpbwuhEEdB3N1orNgG5lCy6TRmEShkkZBPs"/>
+<div class="flex-1">
+<p class="text-base text-text-secondary-light dark:text-text-secondary-dark">You're <span class="font-bold text-text-primary-light dark:text-text-primary-dark">#8</span> — <span class="text-primary font-semibold">+2 ranks</span> this week!</p>
+</div>
+</div>
+</section>
+<section>
+<div class="bg-card-light dark:bg-card-dark rounded-lg p-4 flex items-center justify-between">
+<div class="flex-1 pr-4">
+<h4 class="font-semibold text-base">AI Insight</h4>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark mt-1">Your protein intake dropped 5% this week — add 1 egg to breakfast.</p>
+</div>
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark !text-xl">arrow_forward_ios</span>
+</div>
+</section>
+</div>
+</main>
+<nav class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark shadow-[0_-2px_10px_-3px_rgba(0,0,0,0.05)]">
+<div class="max-w-md mx-auto flex justify-around items-center h-20">
+<button class="flex flex-col items-center justify-center text-primary w-16 space-y-1">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-text-secondary-light dark:text-text-secondary-dark w-16 space-y-1">
+<span class="material-symbols-outlined">bar_chart_4_bars</span>
+<span class="text-xs">Progress</span>
+</button>
+<button class="flex flex-col items-center justify-center text-text-secondary-light dark:text-text-secondary-dark w-16 space-y-1">
+<span class="material-symbols-outlined">restaurant_menu</span>
+<span class="text-xs">Meals</span>
+</button>
+<button class="flex flex-col items-center justify-center text-text-secondary-light dark:text-text-secondary-dark w-16 space-y-1">
+<span class="material-symbols-outlined">fitness_center</span>
+<span class="text-xs">Workouts</span>
+</button>
+<button class="flex flex-col items-center justify-center text-text-secondary-light dark:text-text-secondary-dark w-16 space-y-1">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-xs">Community</span>
+</button>
+</div>
+</nav>
+</div>
+
+</body></html>
